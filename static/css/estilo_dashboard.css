@@ -1,0 +1,153 @@
+/* Estilo Geral */
+
+body{
+    background-color: black;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: -30px;
+}
+
+/* Menu */
+.areaMenu{
+    position: fixed;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.logo img{
+    width: 120px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 150px; /* Espaçamento entre os itens */
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    font-family: "Rubik", sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: white; /* Cor ao passar o mouse */
+}
+
+/* Sobre */
+.sobre{
+    padding-top: 120px;
+    margin-top: 100px;
+}
+
+.sobre h2{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Video */
+.video{
+    margin-top: 100px;
+}
+
+.video h2{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.video_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.video_container video {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.download {
+    margin-right: 250px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 50px 60px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download i {
+    font-size: 44px;
+}
+
+.download:hover {
+    background-color: #093f62;
+}
+
+/* Conhecimento */
+.conhecimentos {
+    margin-top: 30px;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.conteudo_conhecimentos h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.lista_conhecimentos {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lista_conhecimentos li {
+    font-family: "Poppins", sans-serif;
+    background-color: #094c79;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.lista_conhecimentos li:hover {
+    background-color: #2980b9;
+}

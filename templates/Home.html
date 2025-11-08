@@ -135,9 +135,11 @@
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
-                    <div class="img_port" style='background-image: url("{{ url_for('static', filename='imagens/comprida.jpg') }}");'>
-                        <div class="overlay">Projeto 1</div>
-                    </div>
+                    <a href="{{ url_for('dashboard') }}">
+                        <div class="img_port" style="background-image: url('{{ url_for("static", filename="imagens/comprida.jpg") }}');">
+                            <div class="overlay">Projeto 1</div>
+                        </div>  
+                    </a>
                     <div class="img_port" style='background-image: url("{{ url_for('static', filename='imagens/comprida.jpg') }}");'>
                         <div class="overlay">Projeto 2</div>
                     </div>

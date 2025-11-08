@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!--Fim Google Fonts-->
+    <!-- Bootstrp Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+     <!-- Bootstrap Icons -->
+    <!-- Bootstrp Icons -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo_dashboard.css') }}">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        
+            <div class="interface">
+                <div class="areaMenu">
+                    <div class="logo">
+                        <a href="{{ url_for('home') }}">
+                            <img src="{{ url_for('static', filename='imagens/logo.jpg') }}" alt="Logo">
+                        </a>
+                    </div> <!-- Fim logo -->
+                    <nav class="layoutNav">
+                        <ul class="menu">
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li><a href="#">Sobre o Projeto</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">Conhecimentos</a></li>
+                        </ul>
+                    </nav> <!--Fim do nav-->
+                </div> <!--Fim da area_menu-->
+            </div> <!--Fim da interface-->
+        
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="conteudo_sobre">
+                    <h2 class="titulo_sobre">Dashboard</h2>
+                    <p class="texto_sobre">Bem-vindo a seção dashboard do meu portfólio! Aqui você encontrará uma visão geral dos meus projetos, habilidades e experiências. Navegue pelas seções para conhecer mais sobre meu trabalho e como posso contribuir para o seu próximo projeto ou para a sua empresa.</p>
+                </div> <!--Fim do conteudo_sobre-->
+            </div> <!--Fim da interface-->
+        </section> <!--Fim da seção sobre-->
+
+        <section class="video">
+            <div class="interface">
+                <div class="conteudo_video">
+                    <h2>Video de Apresentação</h2>
+                    <div class="video_container">
+                        <video controls>
+                            <source src="{{ url_for('static', filename='videos/Dashboard_Falhas_Talhao.mp4') }}" type="video/mp4">
+                            Seu navegador não suporta o elemento de vídeo.
+                        </video>
+                        
+                        <a href="{{ url_for('static', filename='arquivos/Dashboard.pbix') }}"><button class="download"><i class="bi bi-download"></i></button></a>
+
+                    </div> <!--Fim do video_container-->
+                </div> <!--Fim do conteudo_video-->
+            </div> <!--Fim da interface-->
+        </section> <!--Fim da seção video-->
+
+        <section class="conhecimentos">
+            <div class="interface">
+                <div class="conteudo_conhecimentos">
+                    <h2>Meus Conhecimentos nessa Área</h2>
+                    <ul class="lista_conhecimentos">
+                        <li>Power BI</li>
+                        <li>Ánalise de Dados</li>
+                        <li>Modelagem de Dados</li>
+                        <li>Visualização de Dados</li>
+                        <li>Excel</li>
+                    </ul>
+                </div> <!--Fim do conteudo_conhecimentos-->
+            </div> <!--Fim da interface-->
+        </section> <!--Fim da seção conhecimentos-->
+    </header> <!--Fim do header-->
+</body>
+</html>
