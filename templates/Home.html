@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!--Fim Google Fonts-->
+    <!-- Bootstrp Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+     <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilo.css') }}">
+    <script src="{{ url_for('static', filename='js/menu.js') }}" defer></script>
+    <title>Portfólio</title>
+</head>
+<body>
+    <header> 
+        <div class="interface">
+            <!-- Agrupamento da logo e do menu -->
+            <div class="menu_area">
+                <div class="logo">
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='imagens/logo.jpg') }}" alt="Logo">
+                    </a>
+                </div> <!-- Fim logo -->
+                    <nav class="menu_desktop">    
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Especialidades</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Projetos</a></li>
+                        </ul>
+                    </nav> 
+                </div> <!-- Fim menu_desktop -->
+
+            <!-- Botão de contato separado à direita -->
+            <div class="btn_contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div> <!-- Fim btn_contato -->
+
+            <div class="btn_abrir" id="btn_menu">
+                <i class="bi bi-list"></i>
+            </div> <!-- Botão de abrir menu mobile -->
+
+                <div class="menu_mobile" id="menu_mobile">
+                    <div class="btn_fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div> <!-- Botão de fechar menu mobile -->
+                    
+                    <nav>    
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Especialidades</a></li>
+                            <li><a href="#">Sobre</a></li>
+                            <li><a href="#">Projetos</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>  
+
+                </div> <!-- Fim menu_mobile -->
+                <div class="overlay_menu" id="overlay_menu">
+
+                </div> <!-- Fim overlay_menu -->
+        </div> <!-- Fim interface -->
+    </header>
+
+    <main>
+        <section class="topo_site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt_topo_site">
+                        <h1>TRANFORMANDO IDEIAS EM REALIDADE DIGITAL <span>.</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque tenetur ab nemo! Sapiente quidem minima doloremque quibusdam harum ullam, perferendis amet voluptatem qui error atque, ipsum omnis soluta. Placeat, iusto.</p>
+
+                        <div class="btn_contato">
+                            <button>Entre em Contato</button>
+                        </div> <!-- Fim btn_contato -->
+                    </div> <!-- Fim txt_topo_site -->
+                        <div class="img_topo_site">
+                            <img src="{{ url_for('static', filename='imagens/pessoa.webp') }}" alt="">
+                        </div> <!-- Fim img_topo_site -->
+                </div> <!-- Fim flex -->
+            </div><!-- Fim interface -->
+        </section><!--Fim Topo_Site-->
+
+        <section class="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades_box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>WebSite</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates nobis dicta distinctio obcaecati earum debitis animi nostrum provident architecto! Commodi aspernatur, quaerat id magnam praesentium at enim quasi recusandae.</p>
+                    </div> <!-- Fim especialidades_box -->
+                    <div class="especialidades_box">
+                        <i class="bi bi-cart"></i>
+                        <h3>Loja Online</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates nobis dicta distinctio obcaecati earum debitis animi nostrum provident architecto! Commodi aspernatur, quaerat id magnam praesentium at enim quasi recusandae.</p>
+                    </div> <!-- Fim especialidades_box -->
+                    <div class="especialidades_box">
+                        <i class="bi bi-wordpress"></i>
+                        <h3>Blog</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptates nobis dicta distinctio obcaecati earum debitis animi nostrum provident architecto! Commodi aspernatur, quaerat id magnam praesentium at enim quasi recusandae.</p>
+                    </div> <!-- Fim especialidades_box -->
+                </div> <!-- Fim flex -->
+            </div> <!-- Fim interface -->
+        </section> <!-- Fim Especialidades -->
+
+        <section class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img_sobre">
+                        <img src="{{ url_for('static', filename='imagens/pessoa.webp') }}" alt="Sobre Mim">
+                    </div> <!-- Fim img_sobre -->
+                    <div class="txt_sobre">
+                        <h2>MUITO PRAZER, <span>SOU LUIZ MANOEL.</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptas possimus quia inventore laudantium adipisci quos mollitia, corrupti totam ipsa incidunt dolorum magni aliquid delectus nam, recusandae veniam? Animi, officia?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est quasi in, earum omnis velit doloribus provident repellat voluptatibus molestiae corporis ullam, aspernatur ducimus vel dolor numquam repudiandae porro dicta.</p>
+                        <div class="btn_social">
+                            <a href=""><button><i class="bi bi-instagram"></i></button></a>
+                            <a href=""><button><i class="bi bi-youtube"></i></button></a>
+                            <a href=""><button><i class="bi bi-youtube"></i></button></a>
+                        </div> <!-- Fim btn_social -->
+                    </div> <!-- Fim txt_sobre -->
+                </div> <!-- Fim flex --> 
+            </div> <!-- Fim interface -->
+        </section> <!-- Fim Sobre -->
+
+        <section class="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <div class="img_port" style='background-image: url("{{ url_for('static', filename='imagens/comprida.jpg') }}");'>
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img_port" style='background-image: url("{{ url_for('static', filename='imagens/comprida.jpg') }}");'>
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+                    <div class="img_port" style='background-image: url("{{ url_for('static', filename='imagens/comprida.jpg') }}");'>
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div> <!-- Fim flex -->
+            </div> <!-- Fim interface -->
+        </section> <!-- Fim Portfolio -->
+
+        <section class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+                <form action="">
+                    <input type="text" class="text" placeholder="Seu Nome Completo:" required>
+                    <input type="text" class="text" placeholder="Seu Email:" required>
+                    <input type="text" class="text" placeholder="Seu Celular:(opcional)">
+                    <textarea name="" id="" placeholder="Sua Mensagem:" required></textarea>
+
+                    <div class="btn_enviar"><input type="submit" value="Enviar"></div>
+
+                </form> <!-- Fim form -->
+            </div> <!-- Fim interface -->
+        </section> <!-- Fim Formulario -->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line_footer">
+                <div class="flex">
+                    <div class="logo_footer">
+                        <img class="img" src="{{ url_for('static', filename='imagens/logo.jpg') }}" alt="Logo Cabeçalho">
+                    </div> <!-- Fim logo_footer -->
+                    <div class="btn_social">
+                        <a href=""><button><i class="bi bi-instagram"></i></button></a>
+                        <a href=""><button><i class="bi bi-youtube"></i></button></a>
+                        <a href=""><button><i class="bi bi-youtube"></i></button></a>
+                    </div> <!-- Fim btn_social -->
+                </div> <!-- Fim flex -->
+            </div> <!-- Fim line_footer -->
+
+            <div class="line_footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="milto:Contato@bruno.com.br">Contato@bruno.com.br</a></p>
+            </div> <!-- Fim line_footer -->
+        </div> <!-- Fim interface -->
+    </footer> <!-- Fim Footer -->
+
+</body>
+</html>
